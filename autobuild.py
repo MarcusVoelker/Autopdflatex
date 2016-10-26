@@ -17,8 +17,8 @@ class LaTeXRunner(FileSystemEventHandler):
             if e == 0:
                 shutil.copy("./.autobuild/" + fname + ".pdf", ".")
 
-if len(sys.argv) < 3 :
-    print("Missing arguments filename, path!")
+if len(sys.argv) < 2 :
+    print("Missing arguments filename!")
     sys.exit(1)
 
 global mainfile
